@@ -1,10 +1,12 @@
+
+
 //Variable store text message
 String textMessage;
 const int red = 12;
 const int green = 11;
 const int blue = 10;
-void SendMessage()
-{
+
+void SendMessage(){
  Serial.println("AT+CMGF=1");
  delay(1000);
  Serial.println("AT+CMGS=\"+918919164142\"\r");
